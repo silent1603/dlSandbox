@@ -1,0 +1,2 @@
+@echo off
+cmake -S .. -B ..\build\web  "-DVCPKG_CHAINLOAD_TOOLCHAIN_FILE=..\tools/emsdk/upstream/emscripten/cmake/Modules/Platform/Emscripten.cmake" "-DCMAKE_TOOLCHAIN_FILE=..\tools/vcvpkg/scripts/buildsystems/vcpkg.cmake" "-DVCPKG_TARGET_TRIPLET=wasm32-emscripten"
